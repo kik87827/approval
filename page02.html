@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style>
+		.approval_section{padding:30px 24px;outline:1px solid blue;}
+		.approval_section *{}
+		.keyvalue_item_group{display:flex;flex-wrap:wrap;}
+		.keyvalue_item{display:flex;align-items:center;margin:0 74px 20px 0;padding:0;color:#000;}
+		.keyvalue_cell{margin:0;padding:0;}
+		.keyvalue_cell.define_label{}
+		.keyvalue_cell.define_data{padding-left:20px;position:relative;}
+		.keyvalue_cell.define_data:before{display:block;content:'';width:1px;height:22px;background:#dddddd;position:absolute;top:50%;left:10px;transform: translateY(-50%);}
+		.keyvalue_item:last-of-type{}
+		.keyvalue_label{font-weight:bold;}
+		.keyvalue_data{margin:0;padding:0;font-size:16px;}
+
+		.viewform_skin_wrap{border-top:1px solid #323232;}
+		.viewform_skin{width:100%;border-collapse: collapse;}
+		.viewform_skin th,
+		.viewform_skin td{border-bottom:1px solid #d9d9d9;padding:15px 20px;}
+		.viewform_skin th{background:#fcfcfc;width:1px;border-right:1px solid #e7e7e7;}
+		.viewform_skin td{}
+
+		.viewform_label{white-space: nowrap;display:inline-block;font-size:15px;color:#000000;}
+		.viewform_data{font-size:15px;color:#4e4e4e;line-height:1.5;}
+
+		.viewform_data_group{display:flex;flex-wrap:wrap;position:relative;top:-5px;}
+		.viewform_data_group .viewform_data{margin:10px 25px 0 0;}
+		.viewform_data_group .viewform_data:last-of-type{}
+	</style>
+</head>
+
+<body>
+	<div class="approval_section">
+		<div class="viewform_skin_wrap">
+			<table class="viewform_skin">
+				<tr>
+					<th><span class="viewform_label">목적</span></th>
+					<td><div class="viewform_data">Eg)표준 WBS 개정</div></td>
+				</tr>
+				<tr>
+					<th><span class="viewform_label">내용</span></th>
+					<td><div class="viewform_data">변경내역 기재</div></td>
+				</tr>
+				<tr>
+					<th><span class="viewform_label">첨부파일</span></th>
+					<td><div class="viewform_data">표준 WBS 개정본</div></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>
